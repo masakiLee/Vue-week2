@@ -22,7 +22,7 @@ createApp({
           document.cookie = `loginToken=${token}; expires=${new Date(
             expired
           )}; path=/`;
-          window.location = "/product.html";
+          window.location = "product.html";
         })
         .catch((err) => {
           alert(err.response.data.message);
